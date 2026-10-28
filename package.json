@@ -1,6 +1,6 @@
 {
   "name": "@jamolpe88/dsh-free-websearch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Free web search and page fetch for DeepSeek Harness: five keyless engines, no signup, no API key, no paid fallback. Installs and works.",
   "type": "module",
   "main": "lib/index.js",
