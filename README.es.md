@@ -117,6 +117,12 @@ Desde npm:
 dsh plugin --profile desktop add @jamolpe88/dsh-free-websearch
 ```
 
+El perfil `web` instala el mismo paquete:
+
+```bash
+dsh plugin --profile web add @jamolpe88/dsh-free-websearch
+```
+
 Desde el repositorio:
 
 ```bash
@@ -200,7 +206,7 @@ además escribe los ids originales al descargarse.
 | DSH | `>= 0.2.1-rc.3` (la única versión probada por el autor) |
 | Node | `>= 20.3` (el paquete); DSH trae 22+ |
 | SO | Windows 11 (probado); el código es Node puro, macOS y Linux sin probar |
-| Perfil | `desktop` |
+| Perfil | `desktop` (probado); `web` arranca y busca por la misma costura |
 | Costura | proveedores de search + fetch de `ctx.web` |
 | Catálogo | [listado en dsh-plugin.org](https://dsh-plugin.org/plugins/jamolpe88/dsh-free-websearch) |
 

@@ -99,6 +99,12 @@ From npm:
 dsh plugin --profile desktop add @jamolpe88/dsh-free-websearch
 ```
 
+The `web` profile takes the same package:
+
+```bash
+dsh plugin --profile web add @jamolpe88/dsh-free-websearch
+```
+
 From the repository:
 
 ```bash
@@ -173,7 +179,7 @@ Disabling the bundle has the same effect. If it was installed as a plain depende
 | DSH | `>= 0.2.1-rc.3` (the only version tested by the author) |
 | Node | `>= 20.3` (the package); DSH ships 22+ |
 | OS | Windows 11 (tested); the code is plain Node, macOS and Linux untested |
-| Profile | `desktop` |
+| Profile | `desktop` (tested); `web` boots and searches through the same seam |
 | Seam | `ctx.web` search + fetch providers |
 | Catalog | [listed on dsh-plugin.org](https://dsh-plugin.org/plugins/jamolpe88/dsh-free-websearch) |
 
