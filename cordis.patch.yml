@@ -1,0 +1,27 @@
+# dsh-free-websearch — bundle layer for DeepSeek Harness.
+#
+# Three declarative facts, so uninstalling restores the shipped behaviour
+# exactly: this whole file lives in the package, so removing the bundle
+# removes the takeover, the pin, and the disables in one step.
+#
+# 1. Point the web seam at this plugin's providers.
+#    A patch row replaces the targeted row's whole config, so every key the
+#    base row owns is restated here (it owns only these two).
+# 2. Close the paid door. Without these rows the harness can silently fall
+#    back to DeepSeek's paid search/fetch when a free lane is down, and the
+#    "Use the new Web Search API" switch can flip the seam back at any time.
+# 3. Mount the plugin.
+- id: web
+  config:
+    searchProvider: freeweb
+    fetchProvider: freeweb-fetch
+
+- id: web-search-deepseek
+  disabled: true
+
+- id: web-deepseek-api
+  disabled: true
+
+- insert:
+    - id: freeweb
+      name: '@jamolpe88/dsh-free-websearch'

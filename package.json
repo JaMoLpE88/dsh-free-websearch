@@ -1,0 +1,52 @@
+{
+  "name": "@jamolpe88/dsh-free-websearch",
+  "version": "0.1.0",
+  "description": "Free web search and page fetch for DeepSeek Harness: five keyless engines, no signup, no API key, no paid fallback. Installs and works.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "test",
+    "scripts",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "README.es.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.3"
+  },
+  "scripts": {
+    "test": "node --test test/plugin.test.js",
+    "probe": "node scripts/probe.mjs"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "web-search",
+    "web-fetch",
+    "free",
+    "keyless",
+    "no-api-key"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaMoLpE88/dsh-free-websearch.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "engines": {
+      "dsh": ">=0.2.1-rc.1"
+    }
+  }
+}
